@@ -12,6 +12,28 @@ This page is still under construction.
 
 ## Work Packages
 
+### Work Package 1 -- Multisource database development for flow control
+
+#### Task 1.1 -- Generation of numerical and experimental flow data
+
+#### Task 1.2 -- Development of estimators for real-time flow predictions
+
+#### Task 1.3 -- Database integration and management
+
+### Work Package 2 -- Defining a dynamically-constrained solution space
+
+#### Task 2.1 -- Reduced the action space: perturbation identification and instability characterization
+
+#### Task 2.2 -- Reduced the state-space: building reduced-order models
+
+#### Task 2.3 -- Coupling stability analysis with machine learning
+
+### Work Package 3 -- Generalizable control law leveraging secondary flow instabilities
+
+#### Task 3.1 -- Design of interpretable control laws
+
+#### Task 3.2 -- Development of adaptive control framework
+
 ## Deliverables
 
 - [ ] ($t_0$ + 03) -- D0.1: *Project website and initial data management plan*
