@@ -7,25 +7,33 @@ A particular emphasis is given to *free and open-source softwares* following the
 To foster scientific collaborations, all codes are developped in dedicated public [GitHub](github.com) repositories.
 For long-term preservation, every major release is also hosted on [Zenodo]() and [recherche.data.gouv.fr]() with a citable DOI for proper referencing.
 
-## dNami: Simulation of system of balance laws
+## Computational Fluid Dynamics
+
+### dNami: Simulation of system of balance laws
 
 |   |   |
 |---|---|
 | **{{< fa brands github size=1em >}} repository** | [dNami](https://github.com/dNamiLab/dNami) |
 | **License** | BSD 3-Clause |
 | **Programming Language** | Python, Fortran, C |
+| **Status** | In development |
 | **Core developers** | [N. Alferez](https://www.linkedin.com/in/nicolas-alferez-4b59674a/?originalSubdomain=fr) |
 
 `dNami` is an open-source multi-language (Python, Fortran, C) framework for solving systems of balance laws using explicit numerical schemes on structured meshes. dNami uses MPI, loop-unrolling and cache blocking techniques to speed up stencil-based operations. Spatial derivatives are constructed using a customisable finite-difference formulation.
 
-## LightKrylov: Abstract linear algebra
+
+## Linear Algebra
+
+### LightKrylov: Abstract linear algebra
 
 |   |   |
 |---|---|
 | **{{< fa brands github size=1em >}} repository** | [`LightKrylov`](https://github.com/nekStab/LightKrylov) |
 | **License**  | BSD 3-Clause |
 | **Programming Language** | Fortran |
+| **Status** | Stable |
 | **Core developers** | [J.-Ch. Loiseau](https://loiseaujc.github.io/) and [Simon Kern](https://www.linkedin.com/in/simon-kern-49600382/?originalSubdomain=fr) |
+| **Paper** | [Journal of Open Source Software](https://joss.theoj.org/papers/10.21105/joss.09623) |
 
 `LightKrylov` is a modern Fortran package for linear algebra based on Krylov methods. It leverages Fortran's `abstract type` feature to provide generic implementations of the various Krylov methods. The only requirement from the user to benefit from the capabilities of `LightKrylov` is to extend the `abstract_vector` and `abstract_linop` types to define their notion of vectors and linear operators. `LightKrylov` then provides the following functionalities:
 
@@ -35,3 +43,53 @@ For long-term preservation, every major release is also hosted on [Zenodo]() and
 - Nonlinear system: `newton`.
 
 To date, `LightKrylov` can handle real and complex-valued vectors and linear operators, using both single and double precision arithmetic. This was made possible thanks to [`fypp`](https://github.com/aradi/fypp), a python powered Fortran meta programming utility.
+
+## Optimization
+
+### QuadProg: Strictly convex quadratic programming
+
+|   |   |
+|---|---|
+| **{{< fa brands github size=1em >}} repository** | [`QuadProg`](https://github.com/loiseaujc/QuadProg) |
+| **License**  | GPL-3.0 |
+| **Programming Language** | Fortran |
+| **Status** | Stable |
+| **Core developers** | [J.-Ch. Loiseau](https://loiseaujc.github.io/) |
+
+This is an updated version of the quadprog solver initially written by Berwin A. Turlach in FORTRAN 77. It can be used to solve strictly convex quadratic programs of the form
+
+$$
+    \begin{aligned}
+        \operatorname{minimize} & \quad \dfrac12 x^\top P x - x^\top q \\
+        \operatorname{subject~to} & \quad A x = b \\
+                                  & \quad Cx \geq d,
+    \end{aligned}
+$$
+
+using an active set method. It is most efficient for small to moderate sized QP described using dense matrices. Such problems arise for instance for linear model predictive control, one of the control strategies envisioned in this ANR project.
+
+## Control engineering and reduced-order modeling
+
+### LightROM: Reduced-order modelling framework for abstract LTI systems
+
+|   |   |
+|---|---|
+| **{{< fa brands github size=1em >}} repository** | [`LightROM`](https://github.com/nekStab/LightROM) |
+| **License**  | BSD 3-Clause |
+| **Programming Language** | Fortran |
+| **Status** | In development |
+| **Core developers** | [J.-Ch. Loiseau](https://loiseaujc.github.io/) and [Simon Kern](https://www.linkedin.com/in/simon-kern-49600382/?originalSubdomain=fr) |
+
+`LightROM` is a lightweight Fortran library for reduced-order modeling of large-scale input-output linear time invariant dynamical systems. It is build on top of `LightKrylov`, another package from our group providing implementations of various Krylov-based techniques in modern Fortran.
+
+## LightControl: Modern Fortran interfaces to the SLICOT library
+
+|   |   |
+|---|---|
+| **{{< fa brands github size=1em >}} repository** | [`LightControl`](https://github.com/loiseaujc/LightControl) |
+| **License**  | BSD 3-Clause |
+| **Programming Language** | Fortran |
+| **Status** | Early development |
+| **Core developers** | [J.-Ch. Loiseau](https://loiseaujc.github.io/) |
+
+
