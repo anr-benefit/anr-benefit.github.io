@@ -24,7 +24,7 @@ TBA
 - **Pierre Dupont** (Chargé de Recherche) is a specialist in compressible flow. He was Deputy Director of IUSTI from 2018 to 2022, scientific lead for IUSTI's contributions in three European programs and coordinates the ANR DECOMOS (2010-2014). He is also responsible for research programs in collaboration with CNES and has been a member of the steering committee for establishing a CNRS network on large-scale experimental facilities (Réseau RAMSES).
 
 
-### Institut Pprimehe
+### Institut Pprime
 
 - **Lionel Agostini** (Chargé de Recherche) has significant expertise in wall-bounded turbulent flows, drag reduction strategies, and machine learning applications for fluid dynamics. His research on autoencoder technologies for dimensional reduction and reinforcement learning approaches for flow control has demonstrated promising results in recent studies. His work on data-driven modeling approaches will be valuable for the project, in particular in developing interpretable reduced-order models balancing computational efficiency with physical consistency.
 
