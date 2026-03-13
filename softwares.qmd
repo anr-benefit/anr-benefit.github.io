@@ -23,4 +23,4 @@ For long-term preservation, every major release is also hosted on [Zenodo]() and
 | **{{< fa brands github size=1em >}} repository** | [dNami](https://github.com/dNamiLab/dNami) |
 | **License** | BSD 3-Clause |
 | **Programming Language** | Python, Fortran, C |
-| **Core developpers** | [N. Alferez](https://www.linkedin.com/in/nicolas-alferez-4b59674a/?originalSubdomain=fr) |
+| **Core developers** | [N. Alferez](https://www.linkedin.com/in/nicolas-alferez-4b59674a/?originalSubdomain=fr) |
