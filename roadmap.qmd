@@ -12,13 +12,18 @@ This page is still under construction.
 
 ## Work Packages
 
-### Work Package #1 --
-
-#### Task 1.1 -- 
-
-- [ ] **??**
-    - [ ] ??
-
 ## Deliverables
 
-- [ ] D0.1 ??
+- [ ] ($t_0$ + 03) -- D0.1: *Project website and initial data management plan*
+- [ ] ($t_0$ + 06) -- D1.1: *Geometric definition of the curved models*
+- [ ] ($t_0$ + 18) -- D1.2: *Uncontroled database (experiments + LES)*
+- [ ] ($t_0$ + 18) -- D2.1: *Linear stability analysis (global resolvent)*
+- [ ] ($t_0$ + 20) -- D1.3: *First version of estimators for flow prediction*
+- [ ] ($t_0$ + 22) -- D2.2: *Initial reduced order models*
+- [ ] ($t_0$ + 24) -- D0.2: *Mid-term report*
+- [ ] ($t_0$ + 26) -- D2.3: *Physics-informed dictionnary for symbolic regression*
+- [ ] ($t_0$ + 48) -- D1.4: *Consolidated uncontroled database (data assimilation and stability)*
+- [ ] ($t_0$ + 42) -- D1.5: *Optimized controled database (experiments + LES)*
+- [ ] ($t_0$ + 42) -- D3.1: *ROM with embedded control effects*
+- [ ] ($t_0$ + 46) -- D3.2: *Data assimilation and reinforcement learning framework*
+- [ ] ($t_0$ + 48) -- D0.3: *Final report and final data management plan*
