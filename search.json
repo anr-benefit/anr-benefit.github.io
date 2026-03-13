@@ -1,0 +1,121 @@
+[
+  {
+    "objectID": "roadmap.html",
+    "href": "roadmap.html",
+    "title": "Roadmap",
+    "section": "",
+    "text": "Work in Progress\n\n\n\nThis page is still under construction."
+  },
+  {
+    "objectID": "roadmap.html#work-packages",
+    "href": "roadmap.html#work-packages",
+    "title": "Roadmap",
+    "section": "Work Packages",
+    "text": "Work Packages\n\nWork Package #1 –\n\nTask 1.1 –\n\n??\n\n??"
+  },
+  {
+    "objectID": "roadmap.html#deliverables",
+    "href": "roadmap.html#deliverables",
+    "title": "Roadmap",
+    "section": "Deliverables",
+    "text": "Deliverables\n\nD0.1 ??"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "BENEFIT: Stability-integrated machine learning for active flow control",
+    "section": "",
+    "text": "Work in Progress\n\n\n\nThis page is still under construction."
+  },
+  {
+    "objectID": "index.html#the-project",
+    "href": "index.html#the-project",
+    "title": "BENEFIT: Stability-integrated machine learning for active flow control",
+    "section": "The Project",
+    "text": "The Project\nTBA"
+  },
+  {
+    "objectID": "index.html#team-members",
+    "href": "index.html#team-members",
+    "title": "BENEFIT: Stability-integrated machine learning for active flow control",
+    "section": "Team members",
+    "text": "Team members\nTBA"
+  },
+  {
+    "objectID": "technical_reports/tech_report_1.html",
+    "href": "technical_reports/tech_report_1.html",
+    "title": "Progress Report n°1",
+    "section": "",
+    "text": "This is the first progress report for the ANR project BENEFIT, covering the period from January 1st, 2026 to June 30th, 2026."
+  },
+  {
+    "objectID": "technical_reports/tech_report_1.html#identification",
+    "href": "technical_reports/tech_report_1.html#identification",
+    "title": "Progress Report n°1",
+    "section": "1 Identification",
+    "text": "1 Identification\n\n\n\nProject acronym\nBENEFIT\n\n\nProject title\n???\n\n\nFunding program\n???\n\n\nAgreement number\nANR-??-????-????\n\n\nPrincipal Investigator\nLionel Larchêque\n\n\nStarting date\n??/??/202?\n\n\nDuration\n48 months\n\n\n\n\n\n\nAuthor of report\nJean-Christophe Loiseau\n\n\nDate\nJune 2023\n\n\nPeriod covered\n01/01/2023 - 30/06/2023"
+  },
+  {
+    "objectID": "technical_reports/tech_report_1.html#progress-report",
+    "href": "technical_reports/tech_report_1.html#progress-report",
+    "title": "Progress Report n°1",
+    "section": "2 Progress Report",
+    "text": "2 Progress Report"
+  },
+  {
+    "objectID": "technical_reports/tech_report_1.html#bibliography",
+    "href": "technical_reports/tech_report_1.html#bibliography",
+    "title": "Progress Report n°1",
+    "section": "Bibliography",
+    "text": "Bibliography"
+  },
+  {
+    "objectID": "scientific_production.html",
+    "href": "scientific_production.html",
+    "title": "Scientific Production",
+    "section": "",
+    "text": "This page list all the scientific material produced over the duration of the ANR project BENEFIT, including: journal articles, technical reports, and conferences. Being very sensitive to the Open Science initiative, links to both post- and preprints are given whenever possible. The freely available versions of journal articles are hosted on arXiv, HAL and/or SAM, while the slides of the different presentations are hosted via figshare. Each reference thus also includes a direct link to the dedicated GitHub repository with all the instructions needed to re-generate the data, run the analyses or reproduce the figures whenever possible."
+  },
+  {
+    "objectID": "scientific_production.html#technical-reports",
+    "href": "scientific_production.html#technical-reports",
+    "title": "Scientific Production",
+    "section": "Technical Reports",
+    "text": "Technical Reports\nBelow is a list of the technical and scientific reports to be send to ANR every six months.\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\n\n\n\nJun 2023\n\n\nProgress Report n°1\n\n\nJean-Christophe Loiseau\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Work in Progress\n\n\n\nThis page is still under construction.\nThis page provides additional details about ANR, the funding agency making this project possible, as well the different partners involved in BENEFIT."
+  },
+  {
+    "objectID": "about.html#agence-nationale-de-la-recherche-anr",
+    "href": "about.html#agence-nationale-de-la-recherche-anr",
+    "title": "About",
+    "section": "Agence Nationale de la Recherche (ANR)",
+    "text": "Agence Nationale de la Recherche (ANR)\n\n\n\n\n\nThe Agence Nationale de la Recherche (ANR) is a French institution founded in February 2005. It is tasked with funding the French scientific research activities, both public and partners-based.\n\n\nIt does so through a competitive call for project every year. Accepted projects are typically funded for a duration of three to four years. In 2021, 23% of the submitted projects were funded in the end, for a total budget of nearly 900 M€. The project BENEFIT, accepted during the 2025 call for project, is funded through the particular program ???."
+  },
+  {
+    "objectID": "about.html#dynfluid-laboratory",
+    "href": "about.html#dynfluid-laboratory",
+    "title": "About",
+    "section": "DynFluid Laboratory",
+    "text": "DynFluid Laboratory\n\n\n\n\n\nDynFluid is an Academic research laboratory specialized in computational fluid dynamics located on the parisian campus of Arts et Métiers Institute of Technology.\n\n\nAlong with researchers from Arts et Métiers Institute of Technology, DynFluid also hosts two colleagues from the Conservatoire National des Arts et Métiers (CNAM). Members of DynFluid have a worlwide recognized expertise in high-performance computing for compressible turbulent flows, the development of uncertainty quantification techniques for industrial turbulence models, as well as for their studies of the hydrodynamic instabilities and physical mechanisms underpinning the transition to turbulence."
+  },
+  {
+    "objectID": "softwares.html",
+    "href": "softwares.html",
+    "title": "Softwares",
+    "section": "",
+    "text": "Work in Progress\n\n\n\nThis page is still under construction.\nThis page lists all of the softwares used or developped during the project. A particular emphasis is given to free and open-source softwares following the FAIR principles: Free, Accessible, Inclusive and Reproducible. To foster scientific collaborations, all codes are developped in dedicated public GitHub repositories. For long-term preservation, every major release is also hosted on Zenodo and recherche.data.gouv.fr with a citable DOI for proper referencing."
+  },
+  {
+    "objectID": "softwares.html#dnami",
+    "href": "softwares.html#dnami",
+    "title": "Softwares",
+    "section": "dNAMI",
+    "text": "dNAMI\nRelated publications\n\nR. S. Frantz, J.-Ch. Loiseau, and J.-Ch. Robinet. Krylov methods for large-scale dynamical systems: applications in fluid dynamics. Applied Mechanics Review, vol. 75 (3), May 2023. [AMR] [arXiv]\n\n\n\n\n repository\nnekstab.github.io\n\n\nLicense\nBSD\n\n\nProgramming Language\nFortran 77 / Fortran 90\n\n\nCore developpers\nJ.-Ch. Loiseau and R. S. Frantz"
+  }
+]
