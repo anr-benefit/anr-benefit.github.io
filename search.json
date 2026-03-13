@@ -116,13 +116,20 @@
     "href": "softwares.html",
     "title": "Softwares",
     "section": "",
-    "text": "Work in Progress\n\n\n\nThis page is still under construction.\nThis page lists all of the softwares used or developped during the project. A particular emphasis is given to free and open-source softwares following the FAIR principles: Free, Accessible, Inclusive and Reproducible. To foster scientific collaborations, all codes are developped in dedicated public GitHub repositories. For long-term preservation, every major release is also hosted on Zenodo and recherche.data.gouv.fr with a citable DOI for proper referencing."
+    "text": "This page lists all of the softwares used or developped during the project. A particular emphasis is given to free and open-source softwares following the FAIR principles: Free, Accessible, Inclusive and Reproducible. To foster scientific collaborations, all codes are developped in dedicated public GitHub repositories. For long-term preservation, every major release is also hosted on Zenodo and recherche.data.gouv.fr with a citable DOI for proper referencing."
   },
   {
-    "objectID": "softwares.html#dnami",
-    "href": "softwares.html#dnami",
+    "objectID": "softwares.html#dnami-simulation-of-system-of-balance-laws",
+    "href": "softwares.html#dnami-simulation-of-system-of-balance-laws",
     "title": "Softwares",
-    "section": "dNami",
-    "text": "dNami\ndNami is an open-source multi-language (Python, Fortran, C) framework for solving systems of balance laws using explicit numerical schemes on structured meshes. dNami uses MPI, loop-unrolling and cache blocking techniques to speed up stencil-based operations. Spatial derivatives are constructed using a customisable finite-difference formulation.\n\n\n\n repository\ndNami\n\n\nLicense\nBSD 3-Clause\n\n\nProgramming Language\nPython, Fortran, C\n\n\nCore developers\nN. Alferez"
+    "section": "dNami: Simulation of system of balance laws",
+    "text": "dNami: Simulation of system of balance laws\n\n\n\n repository\ndNami\n\n\nLicense\nBSD 3-Clause\n\n\nProgramming Language\nPython, Fortran, C\n\n\nCore developers\nN. Alferez\n\n\n\ndNami is an open-source multi-language (Python, Fortran, C) framework for solving systems of balance laws using explicit numerical schemes on structured meshes. dNami uses MPI, loop-unrolling and cache blocking techniques to speed up stencil-based operations. Spatial derivatives are constructed using a customisable finite-difference formulation."
+  },
+  {
+    "objectID": "softwares.html#lightkrylov-abstract-linear-algebra",
+    "href": "softwares.html#lightkrylov-abstract-linear-algebra",
+    "title": "Softwares",
+    "section": "LightKrylov: Abstract linear algebra",
+    "text": "LightKrylov: Abstract linear algebra\n\n\n\n repository\nLightKrylov\n\n\nLicense\nBSD 3-Clause\n\n\nProgramming Language\nFortran\n\n\nCore developers\nJ.-Ch. Loiseau and Simon Kern\n\n\n\nLightKrylov is a modern Fortran package for linear algebra based on Krylov methods. It leverages Fortran’s abstract type feature to provide generic implementations of the various Krylov methods. The only requirement from the user to benefit from the capabilities of LightKrylov is to extend the abstract_vector and abstract_linop types to define their notion of vectors and linear operators. LightKrylov then provides the following functionalities:\n\nKrylov factorizations: arnoldi, lanczos, bidiagonalization.\nSpectral analysis: eigs, eighs, svds.\nLinear systems: gmres, cg.\nNonlinear system: newton.\n\nTo date, LightKrylov can handle real and complex-valued vectors and linear operators, using both single and double precision arithmetic. This was made possible thanks to fypp, a python powered Fortran meta programming utility."
   }
 ]

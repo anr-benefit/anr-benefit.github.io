@@ -127,7 +127,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#dnami" id="toc-dnami" class="nav-link active" data-scroll-target="#dnami">dNami</a></li>
+  <li><a href="#dnami-simulation-of-system-of-balance-laws" id="toc-dnami-simulation-of-system-of-balance-laws" class="nav-link active" data-scroll-target="#dnami-simulation-of-system-of-balance-laws">dNami: Simulation of system of balance laws</a></li>
+  <li><a href="#lightkrylov-abstract-linear-algebra" id="toc-lightkrylov-abstract-linear-algebra" class="nav-link" data-scroll-target="#lightkrylov-abstract-linear-algebra">LightKrylov: Abstract linear algebra</a></li>
   </ul>
 </nav>
     </div>
@@ -153,23 +154,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-simple callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Work in Progress
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This page is still under construction.</p>
-</div>
-</div>
 <p>This page lists all of the softwares used or developped during the project. A particular emphasis is given to <em>free and open-source softwares</em> following the <em>FAIR</em> principles: Free, Accessible, Inclusive and Reproducible. To foster scientific collaborations, all codes are developped in dedicated public <a href="github.com">GitHub</a> repositories. For long-term preservation, every major release is also hosted on <a href="">Zenodo</a> and <a href="">recherche.data.gouv.fr</a> with a citable DOI for proper referencing.</p>
-<section id="dnami" class="level2">
-<h2 class="anchored" data-anchor-id="dnami">dNami</h2>
-<p><code>dNami</code> is an open-source multi-language (Python, Fortran, C) framework for solving systems of balance laws using explicit numerical schemes on structured meshes. dNami uses MPI, loop-unrolling and cache blocking techniques to speed up stencil-based operations. Spatial derivatives are constructed using a customisable finite-difference formulation.</p>
+<section id="dnami-simulation-of-system-of-balance-laws" class="level2">
+<h2 class="anchored" data-anchor-id="dnami-simulation-of-system-of-balance-laws">dNami: Simulation of system of balance laws</h2>
 <table class="caption-top table">
 <tbody>
 <tr class="odd">
@@ -190,6 +177,38 @@ Work in Progress
 </tr>
 </tbody>
 </table>
+<p><code>dNami</code> is an open-source multi-language (Python, Fortran, C) framework for solving systems of balance laws using explicit numerical schemes on structured meshes. dNami uses MPI, loop-unrolling and cache blocking techniques to speed up stencil-based operations. Spatial derivatives are constructed using a customisable finite-difference formulation.</p>
+</section>
+<section id="lightkrylov-abstract-linear-algebra" class="level2">
+<h2 class="anchored" data-anchor-id="lightkrylov-abstract-linear-algebra">LightKrylov: Abstract linear algebra</h2>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><strong><i class="fa-brands fa-github fa-1em" aria-label="github"></i> repository</strong></td>
+<td><a href="https://github.com/nekStab/LightKrylov"><code>LightKrylov</code></a></td>
+</tr>
+<tr class="even">
+<td><strong>License</strong></td>
+<td>BSD 3-Clause</td>
+</tr>
+<tr class="odd">
+<td><strong>Programming Language</strong></td>
+<td>Fortran</td>
+</tr>
+<tr class="even">
+<td><strong>Core developers</strong></td>
+<td><a href="https://loiseaujc.github.io/">J.-Ch. Loiseau</a> and <a href="https://www.linkedin.com/in/simon-kern-49600382/?originalSubdomain=fr">Simon Kern</a></td>
+</tr>
+</tbody>
+</table>
+<p><code>LightKrylov</code> is a modern Fortran package for linear algebra based on Krylov methods. It leverages Fortran’s <code>abstract type</code> feature to provide generic implementations of the various Krylov methods. The only requirement from the user to benefit from the capabilities of <code>LightKrylov</code> is to extend the <code>abstract_vector</code> and <code>abstract_linop</code> types to define their notion of vectors and linear operators. <code>LightKrylov</code> then provides the following functionalities:</p>
+<ul>
+<li>Krylov factorizations: <code>arnoldi</code>, <code>lanczos</code>, <code>bidiagonalization</code>.</li>
+<li>Spectral analysis: <code>eigs</code>, <code>eighs</code>, <code>svds</code>.</li>
+<li>Linear systems: <code>gmres</code>, <code>cg</code>.</li>
+<li>Nonlinear system: <code>newton</code>.</li>
+</ul>
+<p>To date, <code>LightKrylov</code> can handle real and complex-valued vectors and linear operators, using both single and double precision arithmetic. This was made possible thanks to <a href="https://github.com/aradi/fypp"><code>fypp</code></a>, a python powered Fortran meta programming utility.</p>
 
 
 </section>
