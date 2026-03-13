@@ -2,21 +2,12 @@
 title: "Softwares"
 ---
 
-::: {.callout-note appearance="simple"}
-### Work in Progress
-
-This page is still under construction.
-
-:::
-
 This page lists all of the softwares used or developped during the project.
 A particular emphasis is given to *free and open-source softwares* following the *FAIR* principles: Free, Accessible, Inclusive and Reproducible.
 To foster scientific collaborations, all codes are developped in dedicated public [GitHub](github.com) repositories.
 For long-term preservation, every major release is also hosted on [Zenodo]() and [recherche.data.gouv.fr]() with a citable DOI for proper referencing.
 
-## dNami
-
-`dNami` is an open-source multi-language (Python, Fortran, C) framework for solving systems of balance laws using explicit numerical schemes on structured meshes. dNami uses MPI, loop-unrolling and cache blocking techniques to speed up stencil-based operations. Spatial derivatives are constructed using a customisable finite-difference formulation.
+## dNami: Simulation of system of balance laws
 
 |   |   |
 |---|---|
@@ -24,3 +15,23 @@ For long-term preservation, every major release is also hosted on [Zenodo]() and
 | **License** | BSD 3-Clause |
 | **Programming Language** | Python, Fortran, C |
 | **Core developers** | [N. Alferez](https://www.linkedin.com/in/nicolas-alferez-4b59674a/?originalSubdomain=fr) |
+
+`dNami` is an open-source multi-language (Python, Fortran, C) framework for solving systems of balance laws using explicit numerical schemes on structured meshes. dNami uses MPI, loop-unrolling and cache blocking techniques to speed up stencil-based operations. Spatial derivatives are constructed using a customisable finite-difference formulation.
+
+## LightKrylov: Abstract linear algebra
+
+|   |   |
+|---|---|
+| **{{< fa brands github size=1em >}} repository** | [`LightKrylov`](https://github.com/nekStab/LightKrylov) |
+| **License**  | BSD 3-Clause |
+| **Programming Language** | Fortran |
+| **Core developers** | [J.-Ch. Loiseau](https://loiseaujc.github.io/) and [Simon Kern](https://www.linkedin.com/in/simon-kern-49600382/?originalSubdomain=fr) |
+
+`LightKrylov` is a modern Fortran package for linear algebra based on Krylov methods. It leverages Fortran's `abstract type` feature to provide generic implementations of the various Krylov methods. The only requirement from the user to benefit from the capabilities of `LightKrylov` is to extend the `abstract_vector` and `abstract_linop` types to define their notion of vectors and linear operators. `LightKrylov` then provides the following functionalities:
+
+- Krylov factorizations: `arnoldi`, `lanczos`, `bidiagonalization`.
+- Spectral analysis: `eigs`, `eighs`, `svds`.
+- Linear systems: `gmres`, `cg`.
+- Nonlinear system: `newton`.
+
+To date, `LightKrylov` can handle real and complex-valued vectors and linear operators, using both single and double precision arithmetic. This was made possible thanks to [`fypp`](https://github.com/aradi/fypp), a python powered Fortran meta programming utility.
