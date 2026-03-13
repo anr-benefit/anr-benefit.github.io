@@ -168,11 +168,12 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#quadprog-strictly-convex-quadratic-programming" id="toc-quadprog-strictly-convex-quadratic-programming" class="nav-link" data-scroll-target="#quadprog-strictly-convex-quadratic-programming">QuadProg: Strictly convex quadratic programming</a></li>
   </ul></li>
-  <li><a href="#control-engineering-and-reduced-order-modeling" id="toc-control-engineering-and-reduced-order-modeling" class="nav-link" data-scroll-target="#control-engineering-and-reduced-order-modeling">Control engineering and reduced-order modeling</a>
+  <li><a href="#control-engineering-reduced-order-modeling-and-system-identification" id="toc-control-engineering-reduced-order-modeling-and-system-identification" class="nav-link" data-scroll-target="#control-engineering-reduced-order-modeling-and-system-identification">Control engineering, reduced-order modeling and system identification</a>
   <ul class="collapse">
   <li><a href="#lightrom-reduced-order-modelling-framework-for-abstract-lti-systems" id="toc-lightrom-reduced-order-modelling-framework-for-abstract-lti-systems" class="nav-link" data-scroll-target="#lightrom-reduced-order-modelling-framework-for-abstract-lti-systems">LightROM: Reduced-order modelling framework for abstract LTI systems</a></li>
   </ul></li>
   <li><a href="#lightcontrol-modern-fortran-toolbox-for-linear-control-engineering" id="toc-lightcontrol-modern-fortran-toolbox-for-linear-control-engineering" class="nav-link" data-scroll-target="#lightcontrol-modern-fortran-toolbox-for-linear-control-engineering">LightControl: Modern Fortran toolbox for linear control engineering</a></li>
+  <li><a href="#pysindy-python-package-for-sparse-identification-of-nonlinear-dynamics" id="toc-pysindy-python-package-for-sparse-identification-of-nonlinear-dynamics" class="nav-link" data-scroll-target="#pysindy-python-package-for-sparse-identification-of-nonlinear-dynamics">pySINDy: Python package for sparse identification of nonlinear dynamics</a></li>
   </ul>
 </nav>
     </div>
@@ -311,8 +312,8 @@ window.Quarto = {
 <p>using an active set method. It is most efficient for small to moderate sized QP described using dense matrices. Such problems arise for instance for linear model predictive control, one of the control strategies envisioned in this ANR project.</p>
 </section>
 </section>
-<section id="control-engineering-and-reduced-order-modeling" class="level2">
-<h2 class="anchored" data-anchor-id="control-engineering-and-reduced-order-modeling">Control engineering and reduced-order modeling</h2>
+<section id="control-engineering-reduced-order-modeling-and-system-identification" class="level2">
+<h2 class="anchored" data-anchor-id="control-engineering-reduced-order-modeling-and-system-identification">Control engineering, reduced-order modeling and system identification</h2>
 <section id="lightrom-reduced-order-modelling-framework-for-abstract-lti-systems" class="level3">
 <h3 class="anchored" data-anchor-id="lightrom-reduced-order-modelling-framework-for-abstract-lti-systems">LightROM: Reduced-order modelling framework for abstract LTI systems</h3>
 <table class="caption-top table">
@@ -369,6 +370,30 @@ window.Quarto = {
 </tbody>
 </table>
 <p><code>LightControl</code> is an attempt to emulate the MATLAB Control toolbox in Fortran. It provides high-level interfaces to numerous utilities provided by the FORTRAN77 <a href="https://www.slicot.org/"><code>SLICOT</code></a> toolbox. It is in its very early development stage but already provides high-levels interfaces for solving Lyapunov and Riccati equations, or computing controllability and observability gramians of an LTI system.</p>
+</section>
+<section id="pysindy-python-package-for-sparse-identification-of-nonlinear-dynamics" class="level2">
+<h2 class="anchored" data-anchor-id="pysindy-python-package-for-sparse-identification-of-nonlinear-dynamics">pySINDy: Python package for sparse identification of nonlinear dynamics</h2>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><strong><i class="fa-brands fa-github fa-1em" aria-label="github"></i> repository</strong></td>
+<td><a href="https://github.com/dynamicslab/pysindy"><code>pySINDy</code></a></td>
+</tr>
+<tr class="even">
+<td><strong>License</strong></td>
+<td>MIT</td>
+</tr>
+<tr class="odd">
+<td><strong>Programming Language</strong></td>
+<td>Python</td>
+</tr>
+<tr class="even">
+<td><strong>Status</strong></td>
+<td>Stable</td>
+</tr>
+</tbody>
+</table>
+<p><code>PySINDy</code> is a package for system identification, primarily revolving around the method of Sparse Identification of Nonlinear Dynamical systems (SINDy) introduced in Brunton et al.&nbsp;(2016). It also includes other methods from related literature. System identification refers to the process of using measurement data to infer the governing dynamics. Once discovered, these equations can make predictions about future states, can inform control inputs, or can enable the theoretical study using analytical techniques. The resulting models are inherently interpretable and generalizable.</p>
 
 
 </section>
