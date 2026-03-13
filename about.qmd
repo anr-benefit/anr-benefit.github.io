@@ -29,6 +29,34 @@ It is tasked with funding the French scientific research activities, both public
 It does so through a competitive call for project every year. Accepted projects are typically funded for a duration of three to four years. In 2021, 23% of the submitted projects were funded in the end, for a total budget of nearly 900 M€.
 The project **BENEFIT**, accepted during the 2025 call for project, is funded through the particular program [*???*]().
 
+## IUSTI
+
+::: {.grid}
+
+::: {.g-col-4}
+ADD IUSTI LOGO
+:::
+
+::: {.g-col-8}
+[**IUSTI**](https://iusti.cnrs.fr/) ADD DESCRIPTION
+:::
+
+:::
+
+## Institut Pprime
+
+::: {.grid}
+
+::: {.g-col-4}
+![](https://upload.wikimedia.org/wikipedia/fr/8/8d/Institut_P%27_logo.png)
+:::
+
+::: {.g-col-8}
+[**Institut Pprime**](https://pprime.fr/en/home-pprime/) ADD DESCRIPTION
+:::
+
+:::
+
 ## DynFluid Laboratory
 
 ::: {.grid}
