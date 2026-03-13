@@ -19,10 +19,10 @@ website:
     border: true
     left:
         - text: "<img src='https://iris.anr.fr/img/ANR-LOGO-NOIR.png' width='256px' /img>"
-    center:
-        - text: "<img src='https://assets.ensam.eu/logo/en/logo-trans-322x84.png' width='192px' /img>"
-    right:
-        - text: "<img src='https://www.ic-arts.eu/wp-content/uploads/2018/05/logo-DynFluid.png' width='192px' /img>"
+    # center:
+    #     - text: "<img src='https://assets.ensam.eu/logo/en/logo-trans-322x84.png' width='192px' /img>"
+    # right:
+    #     - text: "<img src='https://www.ic-arts.eu/wp-content/uploads/2018/05/logo-DynFluid.png' width='192px' /img>"
 
 format:
 
