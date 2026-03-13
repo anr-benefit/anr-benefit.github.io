@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Softwares – ANR BENEFIT – stabBility-integratEd machiNe lEarning For actIve flow conTol</title>
+<title>Softwares – ANR BENEFIT – staBility-integratEd machiNe lEarning For actIve flow conTrol</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -82,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title"><strong>ANR BENEFIT</strong> – stab<strong>B</strong>ility-integrat<strong>E</strong>d machi<strong>N</strong>e l<strong>E</strong>arning <strong>F</strong>or act<strong>I</strong>ve flow con<strong>T</strong>ol</span>
+    <span class="navbar-title"><strong>ANR BENEFIT</strong> – sta<strong>B</strong>ility-integrat<strong>E</strong>d machi<strong>N</strong>e l<strong>E</strong>arning <strong>F</strong>or act<strong>I</strong>ve flow con<strong>T</strong>rol</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -127,8 +156,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#dnami-simulation-of-system-of-balance-laws" id="toc-dnami-simulation-of-system-of-balance-laws" class="nav-link active" data-scroll-target="#dnami-simulation-of-system-of-balance-laws">dNami: Simulation of system of balance laws</a></li>
+  <li><a href="#computational-fluid-dynamics" id="toc-computational-fluid-dynamics" class="nav-link active" data-scroll-target="#computational-fluid-dynamics">Computational Fluid Dynamics</a>
+  <ul class="collapse">
+  <li><a href="#dnami-simulation-of-system-of-balance-laws" id="toc-dnami-simulation-of-system-of-balance-laws" class="nav-link" data-scroll-target="#dnami-simulation-of-system-of-balance-laws">dNami: Simulation of system of balance laws</a></li>
+  </ul></li>
+  <li><a href="#linear-algebra" id="toc-linear-algebra" class="nav-link" data-scroll-target="#linear-algebra">Linear Algebra</a>
+  <ul class="collapse">
   <li><a href="#lightkrylov-abstract-linear-algebra" id="toc-lightkrylov-abstract-linear-algebra" class="nav-link" data-scroll-target="#lightkrylov-abstract-linear-algebra">LightKrylov: Abstract linear algebra</a></li>
+  </ul></li>
+  <li><a href="#optimization" id="toc-optimization" class="nav-link" data-scroll-target="#optimization">Optimization</a>
+  <ul class="collapse">
+  <li><a href="#quadprog-strictly-convex-quadratic-programming" id="toc-quadprog-strictly-convex-quadratic-programming" class="nav-link" data-scroll-target="#quadprog-strictly-convex-quadratic-programming">QuadProg: Strictly convex quadratic programming</a></li>
+  </ul></li>
+  <li><a href="#control-engineering-and-reduced-order-modeling" id="toc-control-engineering-and-reduced-order-modeling" class="nav-link" data-scroll-target="#control-engineering-and-reduced-order-modeling">Control engineering and reduced-order modeling</a>
+  <ul class="collapse">
+  <li><a href="#lightrom-reduced-order-modelling-framework-for-abstract-lti-systems" id="toc-lightrom-reduced-order-modelling-framework-for-abstract-lti-systems" class="nav-link" data-scroll-target="#lightrom-reduced-order-modelling-framework-for-abstract-lti-systems">LightROM: Reduced-order modelling framework for abstract LTI systems</a></li>
+  </ul></li>
+  <li><a href="#lightcontrol-modern-fortran-interfaces-to-the-slicot-library" id="toc-lightcontrol-modern-fortran-interfaces-to-the-slicot-library" class="nav-link" data-scroll-target="#lightcontrol-modern-fortran-interfaces-to-the-slicot-library">LightControl: Modern Fortran interfaces to the SLICOT library</a></li>
   </ul>
 </nav>
     </div>
@@ -155,8 +199,10 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>This page lists all of the softwares used or developped during the project. A particular emphasis is given to <em>free and open-source softwares</em> following the <em>FAIR</em> principles: Free, Accessible, Inclusive and Reproducible. To foster scientific collaborations, all codes are developped in dedicated public <a href="github.com">GitHub</a> repositories. For long-term preservation, every major release is also hosted on <a href="">Zenodo</a> and <a href="">recherche.data.gouv.fr</a> with a citable DOI for proper referencing.</p>
-<section id="dnami-simulation-of-system-of-balance-laws" class="level2">
-<h2 class="anchored" data-anchor-id="dnami-simulation-of-system-of-balance-laws">dNami: Simulation of system of balance laws</h2>
+<section id="computational-fluid-dynamics" class="level2">
+<h2 class="anchored" data-anchor-id="computational-fluid-dynamics">Computational Fluid Dynamics</h2>
+<section id="dnami-simulation-of-system-of-balance-laws" class="level3">
+<h3 class="anchored" data-anchor-id="dnami-simulation-of-system-of-balance-laws">dNami: Simulation of system of balance laws</h3>
 <table class="caption-top table">
 <tbody>
 <tr class="odd">
@@ -172,6 +218,10 @@ ul.task-list li input[type="checkbox"] {
 <td>Python, Fortran, C</td>
 </tr>
 <tr class="even">
+<td><strong>Status</strong></td>
+<td>In development</td>
+</tr>
+<tr class="odd">
 <td><strong>Core developers</strong></td>
 <td><a href="https://www.linkedin.com/in/nicolas-alferez-4b59674a/?originalSubdomain=fr">N. Alferez</a></td>
 </tr>
@@ -179,8 +229,11 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p><code>dNami</code> is an open-source multi-language (Python, Fortran, C) framework for solving systems of balance laws using explicit numerical schemes on structured meshes. dNami uses MPI, loop-unrolling and cache blocking techniques to speed up stencil-based operations. Spatial derivatives are constructed using a customisable finite-difference formulation.</p>
 </section>
-<section id="lightkrylov-abstract-linear-algebra" class="level2">
-<h2 class="anchored" data-anchor-id="lightkrylov-abstract-linear-algebra">LightKrylov: Abstract linear algebra</h2>
+</section>
+<section id="linear-algebra" class="level2">
+<h2 class="anchored" data-anchor-id="linear-algebra">Linear Algebra</h2>
+<section id="lightkrylov-abstract-linear-algebra" class="level3">
+<h3 class="anchored" data-anchor-id="lightkrylov-abstract-linear-algebra">LightKrylov: Abstract linear algebra</h3>
 <table class="caption-top table">
 <tbody>
 <tr class="odd">
@@ -196,8 +249,16 @@ ul.task-list li input[type="checkbox"] {
 <td>Fortran</td>
 </tr>
 <tr class="even">
+<td><strong>Status</strong></td>
+<td>Stable</td>
+</tr>
+<tr class="odd">
 <td><strong>Core developers</strong></td>
 <td><a href="https://loiseaujc.github.io/">J.-Ch. Loiseau</a> and <a href="https://www.linkedin.com/in/simon-kern-49600382/?originalSubdomain=fr">Simon Kern</a></td>
+</tr>
+<tr class="even">
+<td><strong>Paper</strong></td>
+<td><a href="https://joss.theoj.org/papers/10.21105/joss.09623">Journal of Open Source Software</a></td>
 </tr>
 </tbody>
 </table>
@@ -209,6 +270,104 @@ ul.task-list li input[type="checkbox"] {
 <li>Nonlinear system: <code>newton</code>.</li>
 </ul>
 <p>To date, <code>LightKrylov</code> can handle real and complex-valued vectors and linear operators, using both single and double precision arithmetic. This was made possible thanks to <a href="https://github.com/aradi/fypp"><code>fypp</code></a>, a python powered Fortran meta programming utility.</p>
+</section>
+</section>
+<section id="optimization" class="level2">
+<h2 class="anchored" data-anchor-id="optimization">Optimization</h2>
+<section id="quadprog-strictly-convex-quadratic-programming" class="level3">
+<h3 class="anchored" data-anchor-id="quadprog-strictly-convex-quadratic-programming">QuadProg: Strictly convex quadratic programming</h3>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><strong><i class="fa-brands fa-github fa-1em" aria-label="github"></i> repository</strong></td>
+<td><a href="https://github.com/loiseaujc/QuadProg"><code>QuadProg</code></a></td>
+</tr>
+<tr class="even">
+<td><strong>License</strong></td>
+<td>GPL-3.0</td>
+</tr>
+<tr class="odd">
+<td><strong>Programming Language</strong></td>
+<td>Fortran</td>
+</tr>
+<tr class="even">
+<td><strong>Status</strong></td>
+<td>Stable</td>
+</tr>
+<tr class="odd">
+<td><strong>Core developers</strong></td>
+<td><a href="https://loiseaujc.github.io/">J.-Ch. Loiseau</a></td>
+</tr>
+</tbody>
+</table>
+<p>This is an updated version of the quadprog solver initially written by Berwin A. Turlach in FORTRAN 77. It can be used to solve strictly convex quadratic programs of the form</p>
+<p><span class="math display">\[
+    \begin{aligned}
+        \operatorname{minimize} &amp; \quad \dfrac12 x^\top P x - x^\top q \\
+        \operatorname{subject~to} &amp; \quad A x = b \\
+                                  &amp; \quad Cx \geq d,
+    \end{aligned}
+\]</span></p>
+<p>using an active set method. It is most efficient for small to moderate sized QP described using dense matrices. Such problems arise for instance for linear model predictive control, one of the control strategies envisioned in this ANR project.</p>
+</section>
+</section>
+<section id="control-engineering-and-reduced-order-modeling" class="level2">
+<h2 class="anchored" data-anchor-id="control-engineering-and-reduced-order-modeling">Control engineering and reduced-order modeling</h2>
+<section id="lightrom-reduced-order-modelling-framework-for-abstract-lti-systems" class="level3">
+<h3 class="anchored" data-anchor-id="lightrom-reduced-order-modelling-framework-for-abstract-lti-systems">LightROM: Reduced-order modelling framework for abstract LTI systems</h3>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><strong><i class="fa-brands fa-github fa-1em" aria-label="github"></i> repository</strong></td>
+<td><a href="https://github.com/nekStab/LightROM"><code>LightROM</code></a></td>
+</tr>
+<tr class="even">
+<td><strong>License</strong></td>
+<td>BSD 3-Clause</td>
+</tr>
+<tr class="odd">
+<td><strong>Programming Language</strong></td>
+<td>Fortran</td>
+</tr>
+<tr class="even">
+<td><strong>Status</strong></td>
+<td>In development</td>
+</tr>
+<tr class="odd">
+<td><strong>Core developers</strong></td>
+<td><a href="https://loiseaujc.github.io/">J.-Ch. Loiseau</a> and <a href="https://www.linkedin.com/in/simon-kern-49600382/?originalSubdomain=fr">Simon Kern</a></td>
+</tr>
+</tbody>
+</table>
+<p><code>LightROM</code> is a lightweight Fortran library for reduced-order modeling of large-scale input-output linear time invariant dynamical systems. It is build on top of <code>LightKrylov</code>, another package from our group providing implementations of various Krylov-based techniques in modern Fortran.</p>
+</section>
+</section>
+<section id="lightcontrol-modern-fortran-interfaces-to-the-slicot-library" class="level2">
+<h2 class="anchored" data-anchor-id="lightcontrol-modern-fortran-interfaces-to-the-slicot-library">LightControl: Modern Fortran interfaces to the SLICOT library</h2>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><strong><i class="fa-brands fa-github fa-1em" aria-label="github"></i> repository</strong></td>
+<td><a href="https://github.com/loiseaujc/LightControl"><code>LightControl</code></a></td>
+</tr>
+<tr class="even">
+<td><strong>License</strong></td>
+<td>BSD 3-Clause</td>
+</tr>
+<tr class="odd">
+<td><strong>Programming Language</strong></td>
+<td>Fortran</td>
+</tr>
+<tr class="even">
+<td><strong>Status</strong></td>
+<td>Early development</td>
+</tr>
+<tr class="odd">
+<td><strong>Core developers</strong></td>
+<td><a href="https://loiseaujc.github.io/">J.-Ch. Loiseau</a></td>
+</tr>
+</tbody>
+</table>
 
 
 </section>

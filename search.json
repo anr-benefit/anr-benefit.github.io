@@ -32,7 +32,7 @@
     "href": "index.html#the-project",
     "title": "BENEFIT: Stability-integrated machine learning for active flow control",
     "section": "The Project",
-    "text": "The Project\nTBA"
+    "text": "The Project\n\n\n\nCaption: Physics-based stability analysis is combined with data-driven techniques in the stability-integrated machine learning framework to enable interpretable active control laws that leverage flow instabilities."
   },
   {
     "objectID": "index.html#team-members",
@@ -119,17 +119,38 @@
     "text": "This page lists all of the softwares used or developped during the project. A particular emphasis is given to free and open-source softwares following the FAIR principles: Free, Accessible, Inclusive and Reproducible. To foster scientific collaborations, all codes are developped in dedicated public GitHub repositories. For long-term preservation, every major release is also hosted on Zenodo and recherche.data.gouv.fr with a citable DOI for proper referencing."
   },
   {
-    "objectID": "softwares.html#dnami-simulation-of-system-of-balance-laws",
-    "href": "softwares.html#dnami-simulation-of-system-of-balance-laws",
+    "objectID": "softwares.html#computational-fluid-dynamics",
+    "href": "softwares.html#computational-fluid-dynamics",
     "title": "Softwares",
-    "section": "dNami: Simulation of system of balance laws",
-    "text": "dNami: Simulation of system of balance laws\n\n\n\n repository\ndNami\n\n\nLicense\nBSD 3-Clause\n\n\nProgramming Language\nPython, Fortran, C\n\n\nCore developers\nN. Alferez\n\n\n\ndNami is an open-source multi-language (Python, Fortran, C) framework for solving systems of balance laws using explicit numerical schemes on structured meshes. dNami uses MPI, loop-unrolling and cache blocking techniques to speed up stencil-based operations. Spatial derivatives are constructed using a customisable finite-difference formulation."
+    "section": "Computational Fluid Dynamics",
+    "text": "Computational Fluid Dynamics\n\ndNami: Simulation of system of balance laws\n\n\n\n repository\ndNami\n\n\nLicense\nBSD 3-Clause\n\n\nProgramming Language\nPython, Fortran, C\n\n\nStatus\nIn development\n\n\nCore developers\nN. Alferez\n\n\n\ndNami is an open-source multi-language (Python, Fortran, C) framework for solving systems of balance laws using explicit numerical schemes on structured meshes. dNami uses MPI, loop-unrolling and cache blocking techniques to speed up stencil-based operations. Spatial derivatives are constructed using a customisable finite-difference formulation."
   },
   {
-    "objectID": "softwares.html#lightkrylov-abstract-linear-algebra",
-    "href": "softwares.html#lightkrylov-abstract-linear-algebra",
+    "objectID": "softwares.html#linear-algebra",
+    "href": "softwares.html#linear-algebra",
     "title": "Softwares",
-    "section": "LightKrylov: Abstract linear algebra",
-    "text": "LightKrylov: Abstract linear algebra\n\n\n\n repository\nLightKrylov\n\n\nLicense\nBSD 3-Clause\n\n\nProgramming Language\nFortran\n\n\nCore developers\nJ.-Ch. Loiseau and Simon Kern\n\n\n\nLightKrylov is a modern Fortran package for linear algebra based on Krylov methods. It leverages Fortran’s abstract type feature to provide generic implementations of the various Krylov methods. The only requirement from the user to benefit from the capabilities of LightKrylov is to extend the abstract_vector and abstract_linop types to define their notion of vectors and linear operators. LightKrylov then provides the following functionalities:\n\nKrylov factorizations: arnoldi, lanczos, bidiagonalization.\nSpectral analysis: eigs, eighs, svds.\nLinear systems: gmres, cg.\nNonlinear system: newton.\n\nTo date, LightKrylov can handle real and complex-valued vectors and linear operators, using both single and double precision arithmetic. This was made possible thanks to fypp, a python powered Fortran meta programming utility."
+    "section": "Linear Algebra",
+    "text": "Linear Algebra\n\nLightKrylov: Abstract linear algebra\n\n\n\n repository\nLightKrylov\n\n\nLicense\nBSD 3-Clause\n\n\nProgramming Language\nFortran\n\n\nStatus\nStable\n\n\nCore developers\nJ.-Ch. Loiseau and Simon Kern\n\n\nPaper\nJournal of Open Source Software\n\n\n\nLightKrylov is a modern Fortran package for linear algebra based on Krylov methods. It leverages Fortran’s abstract type feature to provide generic implementations of the various Krylov methods. The only requirement from the user to benefit from the capabilities of LightKrylov is to extend the abstract_vector and abstract_linop types to define their notion of vectors and linear operators. LightKrylov then provides the following functionalities:\n\nKrylov factorizations: arnoldi, lanczos, bidiagonalization.\nSpectral analysis: eigs, eighs, svds.\nLinear systems: gmres, cg.\nNonlinear system: newton.\n\nTo date, LightKrylov can handle real and complex-valued vectors and linear operators, using both single and double precision arithmetic. This was made possible thanks to fypp, a python powered Fortran meta programming utility."
+  },
+  {
+    "objectID": "softwares.html#optimization",
+    "href": "softwares.html#optimization",
+    "title": "Softwares",
+    "section": "Optimization",
+    "text": "Optimization\n\nQuadProg: Strictly convex quadratic programming\n\n\n\n repository\nQuadProg\n\n\nLicense\nGPL-3.0\n\n\nProgramming Language\nFortran\n\n\nStatus\nStable\n\n\nCore developers\nJ.-Ch. Loiseau\n\n\n\nThis is an updated version of the quadprog solver initially written by Berwin A. Turlach in FORTRAN 77. It can be used to solve strictly convex quadratic programs of the form\n\\[\n    \\begin{aligned}\n        \\operatorname{minimize} & \\quad \\dfrac12 x^\\top P x - x^\\top q \\\\\n        \\operatorname{subject~to} & \\quad A x = b \\\\\n                                  & \\quad Cx \\geq d,\n    \\end{aligned}\n\\]\nusing an active set method. It is most efficient for small to moderate sized QP described using dense matrices. Such problems arise for instance for linear model predictive control, one of the control strategies envisioned in this ANR project."
+  },
+  {
+    "objectID": "softwares.html#control-engineering-and-reduced-order-modeling",
+    "href": "softwares.html#control-engineering-and-reduced-order-modeling",
+    "title": "Softwares",
+    "section": "Control engineering and reduced-order modeling",
+    "text": "Control engineering and reduced-order modeling\n\nLightROM: Reduced-order modelling framework for abstract LTI systems\n\n\n\n repository\nLightROM\n\n\nLicense\nBSD 3-Clause\n\n\nProgramming Language\nFortran\n\n\nStatus\nIn development\n\n\nCore developers\nJ.-Ch. Loiseau and Simon Kern\n\n\n\nLightROM is a lightweight Fortran library for reduced-order modeling of large-scale input-output linear time invariant dynamical systems. It is build on top of LightKrylov, another package from our group providing implementations of various Krylov-based techniques in modern Fortran."
+  },
+  {
+    "objectID": "softwares.html#lightcontrol-modern-fortran-interfaces-to-the-slicot-library",
+    "href": "softwares.html#lightcontrol-modern-fortran-interfaces-to-the-slicot-library",
+    "title": "Softwares",
+    "section": "LightControl: Modern Fortran interfaces to the SLICOT library",
+    "text": "LightControl: Modern Fortran interfaces to the SLICOT library\n\n\n\n repository\nLightControl\n\n\nLicense\nBSD 3-Clause\n\n\nProgramming Language\nFortran\n\n\nStatus\nEarly development\n\n\nCore developers\nJ.-Ch. Loiseau"
   }
 ]
