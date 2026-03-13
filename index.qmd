@@ -11,7 +11,7 @@ This page is still under construction.
 
 ## The Project
 
-TBA
+![**Caption:** Physics-based stability analysis is combined with data-driven techniques in the stability-integrated machine learning framework to enable interpretable active control laws that leverage flow instabilities.](imgs/overview.png)
 
 ## Team members
 

@@ -10,6 +10,8 @@ This page is still under construction.
 
 :::
 
+![**Caption:** Project timeline with work pacakges (WP), tasks, associated risk levels, and researcher assignments over 48 months.](imgs/gantt_diagram.png)
+
 ## Work Packages
 
 ### Work Package 1 -- Multisource database development for flow control
