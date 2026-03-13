@@ -1,0 +1,36 @@
+---
+title: "Progress Report n°1"
+author: "Jean-Christophe Loiseau"
+date: "June 2023"
+image: "../imgs/progress_bar.png"
+number-sections: true
+bibliography: bibliography.bib
+license: "CC BY"
+---
+
+<img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png" width="15%" />
+
+This is the first progress report for the ANR project **BENEFIT**, covering the period from January 1st, 2026 to June 30th, 2026.
+
+## Identification
+
+| | |
+|---|---|
+| **Project acronym** | **BENEFIT** |
+| **Project title** | ??? |
+| **Funding program** | ??? |
+| **Agreement number** | ANR-??-????-???? |
+| **Principal Investigator** | [Lionel Larchêque](mailto:jean-christophe.loiseau@ensam.eu) |
+| **Starting date** | ??/??/202? |
+| **Duration** | 48 months |
+
+| | |
+|---|---|
+| **Author of report** | [Jean-Christophe Loiseau](mailto:jean-christophe.loiseau@ensam.eu) |
+| **Date** | June 2023 |
+| **Period covered** | 01/01/2023 - 30/06/2023 |
+
+## Progress Report
+
+
+## Bibliography {.unnumbered}

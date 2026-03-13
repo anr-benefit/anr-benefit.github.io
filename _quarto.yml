@@ -1,0 +1,35 @@
+project:
+  type: website
+
+website:
+  title: "**ANR BENEFIT** -- stab**B**ility-integrat**E**d machi**N**e l**E**arning **F**or act**I**ve flow con**T**ol"
+
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - roadmap.qmd
+      - href: softwares.qmd
+        text: Softwares
+      - href: scientific_production.qmd
+        text: Scientific Production
+      - about.qmd
+
+  page-footer:
+    border: true
+    left:
+        - text: "<img src='https://iris.anr.fr/img/ANR-LOGO-NOIR.png' width='256px' /img>"
+    center:
+        - text: "<img src='https://assets.ensam.eu/logo/en/logo-trans-322x84.png' width='192px' /img>"
+    right:
+        - text: "<img src='https://www.ic-arts.eu/wp-content/uploads/2018/05/logo-DynFluid.png' width='192px' /img>"
+
+format:
+
+  html:
+    theme: simplex
+    css: styles.css
+    toc: true
+
+
+

@@ -1,0 +1,21 @@
+---
+title: "Scientific Production"
+listing:
+  - id: technical-reports
+    contents: "technical_reports/*qmd"
+    type: table
+    date-format: MMM YYYY
+    fields: [image, date, title, author]
+---
+
+This page list all the scientific material produced over the duration of the ANR project **BENEFIT**, including: journal articles, technical reports, and conferences.
+Being very sensitive to the *Open Science* initiative, links to both post- and preprints are given whenever possible.
+The freely available versions of journal articles are hosted on [arXiv](arxiv.org), [HAL](hal.science) and/or [SAM](sam.ensam.eu), while the slides of the different presentations are hosted via [figshare](figshare.com).
+Each reference thus also includes a direct link to the dedicated GitHub repository with all the instructions needed to re-generate the data, run the analyses or reproduce the figures whenever possible.
+
+## Technical Reports
+
+Below is a list of the technical and scientific reports to be send to ANR every six months.
+
+:::{#technical-reports}
+:::
