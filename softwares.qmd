@@ -82,7 +82,7 @@ using an active set method. It is most efficient for small to moderate sized QP 
 
 `LightROM` is a lightweight Fortran library for reduced-order modeling of large-scale input-output linear time invariant dynamical systems. It is build on top of `LightKrylov`, another package from our group providing implementations of various Krylov-based techniques in modern Fortran.
 
-## LightControl: Modern Fortran toolbox for linear control engineering
+### LightControl: Modern Fortran toolbox for linear control engineering
 
 |   |   |
 |---|---|
@@ -94,7 +94,7 @@ using an active set method. It is most efficient for small to moderate sized QP 
 
 `LightControl` is an attempt to emulate the MATLAB Control toolbox in Fortran. It provides high-level interfaces to numerous utilities provided by the FORTRAN77 [`SLICOT`](https://www.slicot.org/) toolbox. It is in its very early development stage but already provides high-levels interfaces for solving Lyapunov and Riccati equations, or computing controllability and observability gramians of an LTI system.
 
-## pySINDy: Python package for sparse identification of nonlinear dynamics
+### pySINDy: Python package for sparse identification of nonlinear dynamics
 
 |   |   |
 |---|---|
