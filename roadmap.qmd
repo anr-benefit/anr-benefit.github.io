@@ -16,23 +16,63 @@ This page is still under construction.
 
 #### Task 1.1 -- Generation of numerical and experimental flow data
 
+|   |   |
+|---|---|
+| **Objectives** | Produce high-quality flow data across various configurations of curved walls both in the absence or presence of Görtler instabilities. |
+| **Deliverables** | Comprehensive database of velocity fields, wall pressure distributions, and derived quantities (vorticity, Q-criterion, etc). |
+
 #### Task 1.2 -- Development of estimators for real-time flow predictions
 
+|   |   |
+|---|---|
+| **Objectives** | Develop robust estimators predicting the evolution of flow variables of interest from limited measurements accessible in practical applications. |
+| **Deliverables** | Suite of validated estimators for real-time flow predictive with quantified uncertainty, implemented as software modules compatible with control applications. |
+
 #### Task 1.3 -- Database integration and management
+
+|   |   |
+|---|---|
+| **Objectives** | Integrate data from multiple sources into a structured, accessible database system. |
+| **Deliverables** | Integrated database platform with search capabilities and documented APIs for data retrieval along with a comprehensive report on data quality assessment. |
 
 ### Work Package 2 -- Defining a dynamically-constrained solution space
 
 #### Task 2.1 -- Reduced the action space: perturbation identification and instability characterization
 
+|   |   |
+|---|---|
+| **Objectives** | Modal and non-modal stability analyses of Görtler vortices on concave walls. |
+| **Deliverables** | Provide a better understanding of the physical mechanisms responsible for the appearance of centrifugal instabilities and data to feed and guide the learning methods. |
+
 #### Task 2.2 -- Reduced the state-space: building reduced-order models
 
+|   |   |
+|---|---|
+| **Objectives** | Develop reduced-order models capturing the key dynamics of the flow to enable real-time implementation of control strategies. |
+| **Deliverables** | Suite of validated reduced-order models with quantified accuracy metrics, comparison reports against full-order simulations, and software implementation for integration with control algorithms. |
+
 #### Task 2.3 -- Coupling stability analysis with machine learning
+
+|   |   |
+|---|---|
+| **Objectives** | Develop a novel integration framework combining physical insights from stability analyses with machine learning approaches to create physics-informed dictionaries for symbolic regression. |
+| **Deliverables** | Physics-informed dictionaries for symbolic regression, formal specifications for the dynamically-constrained solution space, and documentation of the methodological framework for integrating stability analysis with machine learning. |
 
 ### Work Package 3 -- Generalizable control law leveraging secondary flow instabilities
 
 #### Task 3.1 -- Design of interpretable control laws
 
+|   |   |
+|---|---|
+| **Objectives** | Develop interpretable control lwas to manipulate Görtler vortices for specific flow configurations, enhancing mixing momentum. |
+| **Deliverables** | LIbrary of interpretable control laws for different but limited flow configurations, along with detailed performance analyses. |
+
 #### Task 3.2 -- Development of adaptive control framework
+
+|   |   |
+|---|---|
+| **Objectives** | Extend the applicability of the control laws beyond their design conditions through complementary approaches: ROM with embedded control effects, and data assimilation and reinforcement learning for real-time applications. |
+| **Deliverables** | Reduced-order models with embedded control effects for selected flow scenarios, along with data assimilation and reinforcement learning frameworks for adaptive control implementations. |
 
 ## Deliverables
 
