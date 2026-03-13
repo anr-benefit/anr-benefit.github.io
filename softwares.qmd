@@ -14,15 +14,13 @@ A particular emphasis is given to *free and open-source softwares* following the
 To foster scientific collaborations, all codes are developped in dedicated public [GitHub](github.com) repositories.
 For long-term preservation, every major release is also hosted on [Zenodo]() and [recherche.data.gouv.fr]() with a citable DOI for proper referencing.
 
-## dNAMI
+## dNami
 
-**Related publications**
-
-- R. S. Frantz, J.-Ch. Loiseau, and J.-Ch. Robinet. *Krylov methods for large-scale dynamical systems: applications in fluid dynamics.* Applied Mechanics Review, vol. 75 (3), May 2023. [[AMR]](https://asmedigitalcollection.asme.org/appliedmechanicsreviews/article-abstract/75/3/030802/1156502/Krylov-Methods-for-Large-Scale-Dynamical-Systems) [[arXiv]](https://arxiv.org/pdf/2301.12940.pdf)
+`dNami` is an open-source multi-language (Python, Fortran, C) framework for solving systems of balance laws using explicit numerical schemes on structured meshes. dNami uses MPI, loop-unrolling and cache blocking techniques to speed up stencil-based operations. Spatial derivatives are constructed using a customisable finite-difference formulation.
 
 |   |   |
 |---|---|
-| **{{< fa brands github size=1em >}} repository** | [nekstab.github.io](nekstab.github.io) |
-| **License** | BSD |
-| **Programming Language** | Fortran 77 / Fortran 90 |
-| **Core developpers** | [J.-Ch. Loiseau](loiseau.github.io) and [R. S. Frantz]() |
+| **{{< fa brands github size=1em >}} repository** | [dNami](https://github.com/dNamiLab/dNami) |
+| **License** | BSD 3-Clause |
+| **Programming Language** | Python, Fortran, C |
+| **Core developpers** | [N. Alferez](https://www.linkedin.com/in/nicolas-alferez-4b59674a/?originalSubdomain=fr) |
