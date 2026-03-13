@@ -126,7 +126,12 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#the-project" id="toc-the-project" class="nav-link active" data-scroll-target="#the-project">The Project</a></li>
-  <li><a href="#team-members" id="toc-team-members" class="nav-link" data-scroll-target="#team-members">Team members</a></li>
+  <li><a href="#team-members" id="toc-team-members" class="nav-link" data-scroll-target="#team-members">Team members</a>
+  <ul class="collapse">
+  <li><a href="#iusti" id="toc-iusti" class="nav-link" data-scroll-target="#iusti">IUSTI</a></li>
+  <li><a href="#institut-pprimehe" id="toc-institut-pprimehe" class="nav-link" data-scroll-target="#institut-pprimehe">Institut Pprimehe</a></li>
+  <li><a href="#dynfluid" id="toc-dynfluid" class="nav-link" data-scroll-target="#dynfluid">DynFluid</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -171,9 +176,33 @@ Work in Progress
 </section>
 <section id="team-members" class="level2">
 <h2 class="anchored" data-anchor-id="team-members">Team members</h2>
-<p>TBA</p>
+<section id="iusti" class="level3">
+<h3 class="anchored" data-anchor-id="iusti">IUSTI</h3>
+<ul>
+<li><p><strong>Lionel Larchevêque</strong> (Maître de conférence) is member of the supersonic group of the IUSTI laboratory. His research focues on high-fidelity simulations of compressible flows complementing experimental database in view of advanced joint-analyses of the dynamics of separated flows.</p></li>
+<li><p><strong>Stéphane Piponniau</strong> (Maître de conférence) is a specialist in compressible flows and experimental methods applied to high-speed flows. He is responsible for the <em>Supersonic Wind Tunnel</em> at IUSTI which has has been designated as the <em>compressible flows</em> research platform at Aix-Marseille University. His research focuses on the identification of turbulent structures through modal decompositions, conditional approaches and stochastic estimations.</p></li>
+<li><p><strong>Pierre Dupont</strong> (Chargé de Recherche) is a specialist in compressible flow. He was Deputy Director of IUSTI from 2018 to 2022, scientific lead for IUSTI’s contributions in three European programs and coordinates the ANR DECOMOS (2010-2014). He is also responsible for research programs in collaboration with CNES and has been a member of the steering committee for establishing a CNRS network on large-scale experimental facilities (Réseau RAMSES).</p></li>
+</ul>
+</section>
+<section id="institut-pprimehe" class="level3">
+<h3 class="anchored" data-anchor-id="institut-pprimehe">Institut Pprimehe</h3>
+<ul>
+<li><p><strong>Lionel Agostini</strong> (Chargé de Recherche) has significant expertise in wall-bounded turbulent flows, drag reduction strategies, and machine learning applications for fluid dynamics. His research on autoencoder technologies for dimensional reduction and reinforcement learning approaches for flow control has demonstrated promising results in recent studies. His work on data-driven modeling approaches will be valuable for the project, in particular in developing interpretable reduced-order models balancing computational efficiency with physical consistency.</p></li>
+<li><p><strong>Philippe Traoré</strong> (Professeur des Universités) is a specialist in numerical methods for complex flows and has developed the in-house code ORACLE3D for fluid mechanics simulations with plasma actuators. His experise in control strategies and numerical modelling wil support multiple aspects of the research program.</p></li>
+<li><p><strong>Laurent Cordier</strong> (Directeur de Recherche) brings critical expertise in dimensional reduction techniques, data-driven modelling and data assimilation. His experience with reduced-order models and flow control will be particularly valuable in this project.</p></li>
+<li><p><strong>Frank Kerhervé</strong> (Maître de Conférences) is specialized in experimental fluid mechanics and signal processing. He will contribute to estimator development, data assimilation, reinforcement learning implementations, and serve as a bridge between the experimental and numerical components of the project.</p></li>
+</ul>
+</section>
+<section id="dynfluid" class="level3">
+<h3 class="anchored" data-anchor-id="dynfluid">DynFluid</h3>
+<ul>
+<li><p><strong>Jean-Christophe Robinet</strong> (Professeur des Universités) is the head of the DynFluid laboratory. He is an expert in compressible flows in the field of aeronautics and aeorospace. He is a recognized specialist in the development of methods and the study of instabilities and transition to turbulence.</p></li>
+<li><p><strong>Jean-Christophe Loiseau</strong> (Maître de conférence) is a specialist in numerical linear algebra, optimal control and reduced-order modeling. His research activities focus on elucidating the physical mechanisms responsible for transition to turbulence in fully three-dimensional flows, and the development and use of data-driven techniques for reduced-order modeling in the physical and engineering sciences.</p></li>
+<li><p><strong>Nicolas Alferez</strong> (Maître de conférence) is a specialist in compressible flows and high-performance computing. He is the main developer of the <code>dNami</code> code, an open-source multi-language framework for solving systems of balance laws using explicit numerical schemes on structured meshes, in particular for instability problems in compressible regimes thanks to automatic differentiation methods.</p></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -587,18 +616,10 @@ Work in Progress
 </ul>
     </div>   
     <div class="nav-footer-center">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
- <img src="https://assets.ensam.eu/logo/en/logo-trans-322x84.png" width="192px" img="">
-  </li>  
-</ul>
+      &nbsp;
     </div>
     <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
- <img src="https://www.ic-arts.eu/wp-content/uploads/2018/05/logo-DynFluid.png" width="192px" img="">
-  </li>  
-</ul>
+      &nbsp;
     </div>
   </div>
 </footer>

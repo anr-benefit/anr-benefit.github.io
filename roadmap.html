@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -125,10 +154,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#work-packages" id="toc-work-packages" class="nav-link active" data-scroll-target="#work-packages">Work Packages</a>
-  <ul class="collapse">
-  <li><a href="#work-package-1" id="toc-work-package-1" class="nav-link" data-scroll-target="#work-package-1">Work Package #1 –</a></li>
-  </ul></li>
+  <li><a href="#work-packages" id="toc-work-packages" class="nav-link active" data-scroll-target="#work-packages">Work Packages</a></li>
   <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables">Deliverables</a></li>
   </ul>
 </nav>
@@ -170,23 +196,23 @@ Work in Progress
 </div>
 <section id="work-packages" class="level2">
 <h2 class="anchored" data-anchor-id="work-packages">Work Packages</h2>
-<section id="work-package-1" class="level3">
-<h3 class="anchored" data-anchor-id="work-package-1">Work Package #1 –</h3>
-<section id="task-1.1" class="level4">
-<h4 class="anchored" data-anchor-id="task-1.1">Task 1.1 –</h4>
-<ul class="task-list">
-<li><label><input type="checkbox"><strong>??</strong></label>
-<ul class="task-list">
-<li><label><input type="checkbox">??</label></li>
-</ul></li>
-</ul>
-</section>
-</section>
 </section>
 <section id="deliverables" class="level2">
 <h2 class="anchored" data-anchor-id="deliverables">Deliverables</h2>
 <ul class="task-list">
-<li><label><input type="checkbox">D0.1 ??</label></li>
+<li><label><input type="checkbox">(<span class="math inline">\(t_0\)</span> + 03) – D0.1: <em>Project website and initial data management plan</em></label></li>
+<li><label><input type="checkbox">(<span class="math inline">\(t_0\)</span> + 06) – D1.1: <em>Geometric definition of the curved models</em></label></li>
+<li><label><input type="checkbox">(<span class="math inline">\(t_0\)</span> + 18) – D1.2: <em>Uncontroled database (experiments + LES)</em></label></li>
+<li><label><input type="checkbox">(<span class="math inline">\(t_0\)</span> + 18) – D2.1: <em>Linear stability analysis (global resolvent)</em></label></li>
+<li><label><input type="checkbox">(<span class="math inline">\(t_0\)</span> + 20) – D1.3: <em>First version of estimators for flow prediction</em></label></li>
+<li><label><input type="checkbox">(<span class="math inline">\(t_0\)</span> + 22) – D2.2: <em>Initial reduced order models</em></label></li>
+<li><label><input type="checkbox">(<span class="math inline">\(t_0\)</span> + 24) – D0.2: <em>Mid-term report</em></label></li>
+<li><label><input type="checkbox">(<span class="math inline">\(t_0\)</span> + 26) – D2.3: <em>Physics-informed dictionnary for symbolic regression</em></label></li>
+<li><label><input type="checkbox">(<span class="math inline">\(t_0\)</span> + 48) – D1.4: <em>Consolidated uncontroled database (data assimilation and stability)</em></label></li>
+<li><label><input type="checkbox">(<span class="math inline">\(t_0\)</span> + 42) – D1.5: <em>Optimized controled database (experiments + LES)</em></label></li>
+<li><label><input type="checkbox">(<span class="math inline">\(t_0\)</span> + 42) – D3.1: <em>ROM with embedded control effects</em></label></li>
+<li><label><input type="checkbox">(<span class="math inline">\(t_0\)</span> + 46) – D3.2: <em>Data assimilation and reinforcement learning framework</em></label></li>
+<li><label><input type="checkbox">(<span class="math inline">\(t_0\)</span> + 48) – D0.3: <em>Final report and final data management plan</em></label></li>
 </ul>
 
 
@@ -603,18 +629,10 @@ Work in Progress
 </ul>
     </div>   
     <div class="nav-footer-center">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
- <img src="https://assets.ensam.eu/logo/en/logo-trans-322x84.png" width="192px" img="">
-  </li>  
-</ul>
+      &nbsp;
     </div>
     <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
- <img src="https://www.ic-arts.eu/wp-content/uploads/2018/05/logo-DynFluid.png" width="192px" img="">
-  </li>  
-</ul>
+      &nbsp;
     </div>
   </div>
 </footer>

@@ -11,14 +11,14 @@
     "href": "roadmap.html#work-packages",
     "title": "Roadmap",
     "section": "Work Packages",
-    "text": "Work Packages\n\nWork Package #1 –\n\nTask 1.1 –\n\n??\n\n??"
+    "text": "Work Packages"
   },
   {
     "objectID": "roadmap.html#deliverables",
     "href": "roadmap.html#deliverables",
     "title": "Roadmap",
     "section": "Deliverables",
-    "text": "Deliverables\n\nD0.1 ??"
+    "text": "Deliverables\n\n(\\(t_0\\) + 03) – D0.1: Project website and initial data management plan\n(\\(t_0\\) + 06) – D1.1: Geometric definition of the curved models\n(\\(t_0\\) + 18) – D1.2: Uncontroled database (experiments + LES)\n(\\(t_0\\) + 18) – D2.1: Linear stability analysis (global resolvent)\n(\\(t_0\\) + 20) – D1.3: First version of estimators for flow prediction\n(\\(t_0\\) + 22) – D2.2: Initial reduced order models\n(\\(t_0\\) + 24) – D0.2: Mid-term report\n(\\(t_0\\) + 26) – D2.3: Physics-informed dictionnary for symbolic regression\n(\\(t_0\\) + 48) – D1.4: Consolidated uncontroled database (data assimilation and stability)\n(\\(t_0\\) + 42) – D1.5: Optimized controled database (experiments + LES)\n(\\(t_0\\) + 42) – D3.1: ROM with embedded control effects\n(\\(t_0\\) + 46) – D3.2: Data assimilation and reinforcement learning framework\n(\\(t_0\\) + 48) – D0.3: Final report and final data management plan"
   },
   {
     "objectID": "index.html",
@@ -39,7 +39,7 @@
     "href": "index.html#team-members",
     "title": "BENEFIT: Stability-integrated machine learning for active flow control",
     "section": "Team members",
-    "text": "Team members\nTBA"
+    "text": "Team members\n\nIUSTI\n\nLionel Larchevêque (Maître de conférence) is member of the supersonic group of the IUSTI laboratory. His research focues on high-fidelity simulations of compressible flows complementing experimental database in view of advanced joint-analyses of the dynamics of separated flows.\nStéphane Piponniau (Maître de conférence) is a specialist in compressible flows and experimental methods applied to high-speed flows. He is responsible for the Supersonic Wind Tunnel at IUSTI which has has been designated as the compressible flows research platform at Aix-Marseille University. His research focuses on the identification of turbulent structures through modal decompositions, conditional approaches and stochastic estimations.\nPierre Dupont (Chargé de Recherche) is a specialist in compressible flow. He was Deputy Director of IUSTI from 2018 to 2022, scientific lead for IUSTI’s contributions in three European programs and coordinates the ANR DECOMOS (2010-2014). He is also responsible for research programs in collaboration with CNES and has been a member of the steering committee for establishing a CNRS network on large-scale experimental facilities (Réseau RAMSES).\n\n\n\nInstitut Pprimehe\n\nLionel Agostini (Chargé de Recherche) has significant expertise in wall-bounded turbulent flows, drag reduction strategies, and machine learning applications for fluid dynamics. His research on autoencoder technologies for dimensional reduction and reinforcement learning approaches for flow control has demonstrated promising results in recent studies. His work on data-driven modeling approaches will be valuable for the project, in particular in developing interpretable reduced-order models balancing computational efficiency with physical consistency.\nPhilippe Traoré (Professeur des Universités) is a specialist in numerical methods for complex flows and has developed the in-house code ORACLE3D for fluid mechanics simulations with plasma actuators. His experise in control strategies and numerical modelling wil support multiple aspects of the research program.\nLaurent Cordier (Directeur de Recherche) brings critical expertise in dimensional reduction techniques, data-driven modelling and data assimilation. His experience with reduced-order models and flow control will be particularly valuable in this project.\nFrank Kerhervé (Maître de Conférences) is specialized in experimental fluid mechanics and signal processing. He will contribute to estimator development, data assimilation, reinforcement learning implementations, and serve as a bridge between the experimental and numerical components of the project.\n\n\n\nDynFluid\n\nJean-Christophe Robinet (Professeur des Universités) is the head of the DynFluid laboratory. He is an expert in compressible flows in the field of aeronautics and aeorospace. He is a recognized specialist in the development of methods and the study of instabilities and transition to turbulence.\nJean-Christophe Loiseau (Maître de conférence) is a specialist in numerical linear algebra, optimal control and reduced-order modeling. His research activities focus on elucidating the physical mechanisms responsible for transition to turbulence in fully three-dimensional flows, and the development and use of data-driven techniques for reduced-order modeling in the physical and engineering sciences.\nNicolas Alferez (Maître de conférence) is a specialist in compressible flows and high-performance computing. He is the main developer of the dNami code, an open-source multi-language framework for solving systems of balance laws using explicit numerical schemes on structured meshes, in particular for instability problems in compressible regimes thanks to automatic differentiation methods."
   },
   {
     "objectID": "technical_reports/tech_report_1.html",
@@ -96,6 +96,20 @@
     "title": "About",
     "section": "Agence Nationale de la Recherche (ANR)",
     "text": "Agence Nationale de la Recherche (ANR)\n\n\n\n\n\nThe Agence Nationale de la Recherche (ANR) is a French institution founded in February 2005. It is tasked with funding the French scientific research activities, both public and partners-based.\n\n\nIt does so through a competitive call for project every year. Accepted projects are typically funded for a duration of three to four years. In 2021, 23% of the submitted projects were funded in the end, for a total budget of nearly 900 M€. The project BENEFIT, accepted during the 2025 call for project, is funded through the particular program ???."
+  },
+  {
+    "objectID": "about.html#iusti",
+    "href": "about.html#iusti",
+    "title": "About",
+    "section": "IUSTI",
+    "text": "IUSTI\n\n\nADD IUSTI LOGO\n\n\nIUSTI ADD DESCRIPTION"
+  },
+  {
+    "objectID": "about.html#institut-pprime",
+    "href": "about.html#institut-pprime",
+    "title": "About",
+    "section": "Institut Pprime",
+    "text": "Institut Pprime\n\n\n\n\n\nInstitut Pprime ADD DESCRIPTION"
   },
   {
     "objectID": "about.html#dynfluid-laboratory",
