@@ -123,6 +123,6 @@
     "href": "softwares.html#dnami",
     "title": "Softwares",
     "section": "dNami",
-    "text": "dNami\ndNami is an open-source multi-language (Python, Fortran, C) framework for solving systems of balance laws using explicit numerical schemes on structured meshes. dNami uses MPI, loop-unrolling and cache blocking techniques to speed up stencil-based operations. Spatial derivatives are constructed using a customisable finite-difference formulation.\n\n\n\n repository\ndNami\n\n\nLicense\nBSD 3-Clause\n\n\nProgramming Language\nPython, Fortran, C\n\n\nCore developpers\nN. Alferez"
+    "text": "dNami\ndNami is an open-source multi-language (Python, Fortran, C) framework for solving systems of balance laws using explicit numerical schemes on structured meshes. dNami uses MPI, loop-unrolling and cache blocking techniques to speed up stencil-based operations. Spatial derivatives are constructed using a customisable finite-difference formulation.\n\n\n\n repository\ndNami\n\n\nLicense\nBSD 3-Clause\n\n\nProgramming Language\nPython, Fortran, C\n\n\nCore developers\nN. Alferez"
   }
 ]
