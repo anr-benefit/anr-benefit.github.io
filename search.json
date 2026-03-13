@@ -11,7 +11,7 @@
     "href": "roadmap.html#work-packages",
     "title": "Roadmap",
     "section": "Work Packages",
-    "text": "Work Packages"
+    "text": "Work Packages\n\nWork Package 1 – Multisource database development for flow control\n\nTask 1.1 – Generation of numerical and experimental flow data\n\n\nTask 1.2 – Development of estimators for real-time flow predictions\n\n\nTask 1.3 – Database integration and management\n\n\n\nWork Package 2 – Defining a dynamically-constrained solution space\n\nTask 2.1 – Reduced the action space: perturbation identification and instability characterization\n\n\nTask 2.2 – Reduced the state-space: building reduced-order models\n\n\nTask 2.3 – Coupling stability analysis with machine learning\n\n\n\nWork Package 3 – Generalizable control law leveraging secondary flow instabilities\n\nTask 3.1 – Design of interpretable control laws\n\n\nTask 3.2 – Development of adaptive control framework"
   },
   {
     "objectID": "roadmap.html#deliverables",
@@ -77,13 +77,6 @@
     "text": "This page list all the scientific material produced over the duration of the ANR project BENEFIT, including: journal articles, technical reports, and conferences. Being very sensitive to the Open Science initiative, links to both post- and preprints are given whenever possible. The freely available versions of journal articles are hosted on arXiv, HAL and/or SAM, while the slides of the different presentations are hosted via figshare. Each reference thus also includes a direct link to the dedicated GitHub repository with all the instructions needed to re-generate the data, run the analyses or reproduce the figures whenever possible."
   },
   {
-    "objectID": "scientific_production.html#technical-reports",
-    "href": "scientific_production.html#technical-reports",
-    "title": "Scientific Production",
-    "section": "Technical Reports",
-    "text": "Technical Reports\nBelow is a list of the technical and scientific reports to be send to ANR every six months.\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\n\n\n\nJun 2023\n\n\nProgress Report n°1\n\n\nJean-Christophe Loiseau\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -129,7 +122,7 @@
     "objectID": "softwares.html#dnami",
     "href": "softwares.html#dnami",
     "title": "Softwares",
-    "section": "dNAMI",
-    "text": "dNAMI\nRelated publications\n\nR. S. Frantz, J.-Ch. Loiseau, and J.-Ch. Robinet. Krylov methods for large-scale dynamical systems: applications in fluid dynamics. Applied Mechanics Review, vol. 75 (3), May 2023. [AMR] [arXiv]\n\n\n\n\n repository\nnekstab.github.io\n\n\nLicense\nBSD\n\n\nProgramming Language\nFortran 77 / Fortran 90\n\n\nCore developpers\nJ.-Ch. Loiseau and R. S. Frantz"
+    "section": "dNami",
+    "text": "dNami\ndNami is an open-source multi-language (Python, Fortran, C) framework for solving systems of balance laws using explicit numerical schemes on structured meshes. dNami uses MPI, loop-unrolling and cache blocking techniques to speed up stencil-based operations. Spatial derivatives are constructed using a customisable finite-difference formulation.\n\n\n\n repository\ndNami\n\n\nLicense\nBSD 3-Clause\n\n\nProgramming Language\nPython, Fortran, C\n\n\nCore developpers\nN. Alferez"
   }
 ]
