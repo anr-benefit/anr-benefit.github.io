@@ -147,10 +147,10 @@
     "text": "Control engineering and reduced-order modeling\n\nLightROM: Reduced-order modelling framework for abstract LTI systems\n\n\n\n repository\nLightROM\n\n\nLicense\nBSD 3-Clause\n\n\nProgramming Language\nFortran\n\n\nStatus\nIn development\n\n\nCore developers\nJ.-Ch. Loiseau and Simon Kern\n\n\n\nLightROM is a lightweight Fortran library for reduced-order modeling of large-scale input-output linear time invariant dynamical systems. It is build on top of LightKrylov, another package from our group providing implementations of various Krylov-based techniques in modern Fortran."
   },
   {
-    "objectID": "softwares.html#lightcontrol-modern-fortran-interfaces-to-the-slicot-library",
-    "href": "softwares.html#lightcontrol-modern-fortran-interfaces-to-the-slicot-library",
+    "objectID": "softwares.html#lightcontrol-modern-fortran-toolbox-for-linear-control-engineering",
+    "href": "softwares.html#lightcontrol-modern-fortran-toolbox-for-linear-control-engineering",
     "title": "Softwares",
-    "section": "LightControl: Modern Fortran interfaces to the SLICOT library",
-    "text": "LightControl: Modern Fortran interfaces to the SLICOT library\n\n\n\n repository\nLightControl\n\n\nLicense\nBSD 3-Clause\n\n\nProgramming Language\nFortran\n\n\nStatus\nEarly development\n\n\nCore developers\nJ.-Ch. Loiseau"
+    "section": "LightControl: Modern Fortran toolbox for linear control engineering",
+    "text": "LightControl: Modern Fortran toolbox for linear control engineering\n\n\n\n repository\nLightControl\n\n\nLicense\nMIT\n\n\nProgramming Language\nFortran\n\n\nStatus\nEarly development\n\n\nCore developers\nJ.-Ch. Loiseau\n\n\n\nLightControl is at attempt to emulate the MATLAB Control toolbox in Fortran. It provides high-level interfaces to numerous utilities provided by the FORTRAN77 SLICOT toolbox. It is in its very early development stage but already provides high-levels interfaces for solving Lyapunov and Riccati equations, or computing controllability and observability gramians of an LTI system."
   }
 ]
