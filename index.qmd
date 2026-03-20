@@ -44,7 +44,7 @@ The proposed framework addresses this limitation by specifically targeting flow 
 
 - **Laurent Cordier** (Directeur de Recherche) brings critical expertise in dimensional reduction techniques, data-driven modelling and data assimilation. His experience with reduced-order models and flow control will be particularly valuable in this project.
 
-- **Frank Kerhervé** (Maître de Conférences) is specialized in experimental fluid mechanics and signal processing. He will contribute to estimator development, data assimilation, reinforcement learning implementations, and serve as a bridge between the experimental and numerical components of the project.
+- **Julien Sablon** (Maître de Conférences) has obtained his PhD from ISAE Toulouse in 2023. He specializes in linear stability analysis and vortex dynamics.
 
 ### DynFluid
 
